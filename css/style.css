@@ -1,0 +1,457 @@
+/* PÁGINA INICIAL */
+
+body{
+    background-color: white;
+    margin: 0;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 206, 47);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+.slide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 435px;   
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.feedback{
+    width: 80%;
+    display: flex;
+    justify-content: center; 
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: wrap;    
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+.feedback1{
+    border-radius: 20%;
+    background-color: white;
+    height: 40%; 
+    width: 40%;
+    margin-top: 15px;
+    margin-right: 3%;
+    border: 1px;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #d9d9d9;
+    text-align: justify;
+}
+
+.textoFeedback1{
+    text-align: justify;
+    color: black;
+    font-size: 18px;
+}
+
+.feedback2{
+    border-radius: 20%;
+    background-color: white;
+    height: 40%;    
+    width: 40%;
+    margin-top: 15px;
+    margin-right: 3%;
+    border: 1px;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #d9d9d9;
+    text-align: justify;
+}
+
+.textoFeedback2{
+    text-align: justify;
+    color: black;
+}
+
+.feedback3{
+    border-radius: 20%;
+    background-color: white;
+    height: 40%;   
+    width: 40%;
+    margin-top: 15px;
+    border: 1px;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #d9d9d9;
+    text-align: justify;
+}
+
+.textoFeedback3{
+    text-align: justify;
+    color: black;
+}
+
+.localizacao{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.endereco{
+    height: 150px;    
+    width: 25%;
+    font-size: 25px;
+    text-align: left;
+}
+        
+footer{
+    background-color: rgb(255, 206, 47);
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; 
+    width: 80%;
+    margin-top: 30px;
+}
+
+.infoRodape{
+padding: 10px;
+color: whitesmoke;
+font-size: 20px;
+font-family: 'Oswald', sans-serif;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-height: 450px){
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media (max-width: 800px){
+    .cabecalho{
+        width: 100%;
+    }
+
+    .feedback,
+    .localizacao{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .feedback1,
+    .feedback2,
+    .feedback3,
+    .adress{
+        height: 200px;
+        width: 100%;
+    }
+
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .endereco{
+        margin-top: 48px;
+        margin-bottom: 0px;
+        height: 135px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .rodape{
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    img{
+        height: auto;
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+
+
+/* PÁGINA LOJA */
+
+#todosProd{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#conj1{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.prod1{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+
+.img1{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+.prod2{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img2{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+.prod3{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img3{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+#conj2{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.prod4{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img4{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+.prod5{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img5{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+.prod6{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img6{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+#conj3{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.prod7{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img7{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+.prod8{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img8{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+.prod9{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img9{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+
+/* CONTATO */
+
+.estiloContatoDiv{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: rgb(168, 173, 173);
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.estiloContatoDiv h2{
+    color: black;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+.estiloContatoDiv form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.estiloContatoDiv form label{
+    color: black;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.estiloContatoDiv form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.estiloContatoDiv form input:focus{
+    border-radius: 16px;
+}
+
+.estiloContatoDiv form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+.estiloContatoDiv form textarea:focus{
+    border-radius: 16px;
+}
+
+.estiloContatoDiv form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+.estiloContatoDiv form button:hover{
+    background-color: black;
+    color: rgb(217, 223, 223);
+    border-radius: 16px;
+}
